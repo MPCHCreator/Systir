@@ -10,7 +10,6 @@
                " WHERE correo = '$u'". 
                " AND contraseña = '$p'";
 
-
     $resultado= mysqli_query($conn, $consulta);
     $renglon= mysqli_fetch_assoc($resultado);
     $id = $renglon['id_usuario'];
@@ -22,6 +21,5 @@
         $_SESSION['mensaje'] = "Usuario no valido";
         $_SESSION['msg_div'] = "danger";
         header("Location: iniciar_sesion.php");
-    }
-            
+    }      
 ?>

@@ -20,7 +20,6 @@
 
     }
 
-
     if (mysqli_query($conn, $consulta)) {
         header("Location: contratarServicio.php?contrato=ok");
     } else {
